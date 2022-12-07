@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1550px;
+    height: 918px;
+    margin:0 auto;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ESTILOS PARA ENCABEZADO */
+.header {
+    height: 10.5%;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.left {
+    width: 270px;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left > .logo {
+    width: 200px;
+    height: 30px;
+    background-color: black;
+}
+
+
+.center {
+    width: 706px;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.center table caption {
+    color: yellow;
+    font-size: 22px;
+    text-align: left;
+}
+.center table tr th {
+    padding-right: 25px;
+}
+.center table tr th a {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+}
+.center table tr th a:hover {
+    color: blueviolet;
+}
+
+.right {
+    width: 543px;
+    height: 100%;
+    background-color: black;
+}
+.sidebar {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sidebar > .btn1 {
+    background-color: #302c2c;
+    color: white;
+    font-size: x-large;
+    border-radius: 5px;
+    padding: 15px 35px;
+}
+.sidebar > .btn1 i {
+    color: green;
+}
+.sidebar > .btn2 {
+    background-color: black;
+}
+.sidebar > .btn2 i {
+    font-size: 3em;
+    color: #302c2c;
+}
+.sidebar > .btn3, .btn4 {
+    background-color: #302c2c;
+    color:white;
+    font-size: x-large;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+/* ESTILOS PARA EL CONTENIDO */
+.main {
+    height: 69.3%;
+    background:-webkit-linear-gradient(left, #353535, #0a0909);
+}
+.spacer {
+    width: 100%;
+    height: 68px;
+}
+.page-container {
+    width: 100%;
+    height: 89%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.left-column {
+    display: flex;
+    flex-direction: column;
+}
+.left-column > .text {
+    height: 60%;
+}
+.left-column > .text > .text1 p {
+    color: #aca9a9;
+    font-size: 2.5em;
+    font-weight:lighter;
+    padding-left: 51px; 
+    margin-top: 10px; 
+}
+.left-column > .text > .text1 p span {
+    color: white;
+    font-weight:bold;
+}
+.left-column > .text > .text1 p img {
+    transform: rotate(-45deg);
+}
+.left-column > .text > .text2 p {
+    height: 17px;
+    color: #aca9a9;
+    font-size: 30px;
+    padding-left: 51px; 
+    margin-top: 35px;
+}
+.page-button {
+    display: flex;
+    align-items: center;
+    height: 35%;
+    padding-left: 51px;
+}
+.page-button > .pbtn1 {
+    height: 85px;
+    width: 338px;
+    font-size: 2.2em;
+    background-color: rgb(37, 223, 161);
+    border: 1px solid rgb(37, 223, 161);
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.page-button > .pbtn1:active {
+    box-shadow: 8px 8px 50px rgba(116, 59, 6);
+}
+.page-button > .pbtn2 {
+    height: 80px;
+    width: 259px;
+    color: white;
+    font-size: 2.2em;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 5px;
+    margin-left: 22px;
+    transition: 0.4s;
+}
+.page-button > .pbtn2:active {
+    box-shadow: 8px 8px 50px rgba(116, 59, 6);
+}
+
+.left > .right-column {
+    height: 39%;
+}
+.right-column figure figcaption {
+    color: white;
+    font-size: x-large;
+}
+.right-column figure figcaption span {
+    color: rgb(25, 208, 253);
+}
+
+/* ESTILOS PARA BARRA DE NAVEGACION INFERIOR */
+
+.feature {
+    height: 8%;
+}
+.feature > .option {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.feature > .option > .select {
+    width: 100%;
+    height: 100%;
+    background-color: #383535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1px solid #aca9a9;
+}
+.feature > .option > .select:hover {
+    background-color: orange;
+}
+.feature > .option > .select a {
+    text-decoration: none;
+    color: white;
+
+}
+.feature > .option > .select a span {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+/* ESTLOS PARA EL FOOTER */
+.footer {
+    height: 11.65%;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer p {
+    color: antiquewhite;
+    font-size: x-small;
+}
